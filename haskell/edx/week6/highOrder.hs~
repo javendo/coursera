@@ -1,0 +1,7 @@
+import Data.Char
+
+evens :: [Integer] -> [Integer]
+evens [] = []
+evens (x: xs)
+   | even x = x : evens xs
+   | otherwise = evens xs

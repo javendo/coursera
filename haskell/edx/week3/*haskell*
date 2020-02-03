@@ -1,0 +1,128 @@
+GHCi, version 7.8.3: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:2:22:
+    Not in scope: ‘lenght’
+    Perhaps you meant ‘length’ (imported from Prelude)
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:2:32:
+    No instance for (Fractional Int) arising from a use of ‘/’
+    In the expression: length xs / 2
+    In an equation for ‘n’: n = length xs / 2
+    In an equation for ‘halve’:
+        halve xs
+          = (take n xs, drop n xs)
+          where
+              n = length xs / 2
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:3:1:
+    Parse error: naked expression at top level
+    Perhaps you intended to use TemplateHaskell
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> x
+([1,2,3],[4,5,6])
+*Main> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:20:
+    Couldn't match type ‘([a0], [a0])’ with ‘[Char]’
+    Expected type: String
+      Actual type: ([a0], [a0])
+    In the first argument of ‘putStrLn’, namely ‘x’
+    In a stmt of a 'do' block: putStrLn x
+Failed, modules loaded: none.
+Prelude> show 3
+"3"
+Prelude> show [1, 2, 3, 4]
+"[1,2,3,4]"
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:11:
+    Couldn't match expected type ‘([a0], [a0]) -> t’
+                with actual type ‘IO ()’
+    Relevant bindings include
+      main :: t
+        (bound at /home/abadin/dropbox/haskell/edx/week3/sample.hs:5:1)
+    The function ‘putStrLn’ is applied to two arguments,
+    but its type ‘String -> IO ()’ has only one
+    In a stmt of a 'do' block: putStrLn show x
+    In the expression: do { putStrLn show x }
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:20:
+    Couldn't match type ‘a1 -> String’ with ‘[Char]’
+    Expected type: String
+      Actual type: a1 -> String
+    Probable cause: ‘show’ is applied to too few arguments
+    In the first argument of ‘putStrLn’, namely ‘show’
+    In a stmt of a 'do' block: putStrLn show x
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:1:
+    Parse error: naked expression at top level
+    Perhaps you intended to use TemplateHaskell
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:1:
+    Parse error: naked expression at top level
+    Perhaps you intended to use TemplateHaskell
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:1:
+    Parse error: naked expression at top level
+    Perhaps you intended to use TemplateHaskell
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> x
+([1,2,3],[4,5,6])
+*Main> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:7:1:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Failed, modules loaded: none.
+Prelude> :load "/home/abadin/dropbox/haskell/edx/week3/sample.hs"
+[1 of 1] Compiling Main             ( /home/abadin/dropbox/haskell/edx/week3/sample.hs, interpreted )
+
+/home/abadin/dropbox/haskell/edx/week3/sample.hs:5:1:
+    Parse error: naked expression at top level
+    Perhaps you intended to use TemplateHaskell
+Failed, modules loaded: none.
+Prelude> length [1, 2, 3, 4, 5, 6] `div` 2
+3
+Prelude> null [1,2,3,4]
+False
+Prelude> null []
+True
+Prelude> show []
+"[]"
+Prelude> if null [] then [] else tail []
+[]
+Prelude> if null [1, 2, 3, 4] then [] else tail []

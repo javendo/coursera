@@ -1,0 +1,9 @@
+module Week2 where
+
+import Data.Char
+
+g :: Char -> Bool
+g c = isControl c
+
+main :: IO()
+main = putStrLn $ show $ g 'a'
