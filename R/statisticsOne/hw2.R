@@ -1,0 +1,30 @@
+sr <- read.table("Stats1.13.HW.02.txt", header=T)
+nrow(sr)
+names(sr)
+mean(sr$SR)
+var(sr$SR)
+sd(sr$SR)
+
+pre <- subset(sr, sr[, 3]=="pre")
+post <- subset(sr, sr[, 3]=="post")
+mean(pre$SR)
+var(pre$SR)
+sd(pre$SR)
+mean(post$SR)
+var(post$SR)
+sd(post$SR)
+median(post$SR)
+
+#mean by group
+aggregate(SR~condition+time, sr, mean)
+aggregate(SR~condition, sr, max)
+aggregate(SR~condition, sr, sd)
+
+#plot graph
+par(mfrow = c(2,3))
+hist(subset(pre, pre[, 2]=="WM")[, 4], xlab = "WM group at pretest", main = "")
+hist(subset(post, pre[, 2]=="WM")[, 4], xlab = "WM group at posttest", main = "")
+hist(subset(pre, pre[, 2]=="PE")[, 4], xlab = "PE group at pretest", main = "")
+hist(subset(post, pre[, 2]=="PE")[, 4], xlab = "PE group at posttest", main = "")
+hist(subset(pre, pre[, 2]=="DS")[, 4], xlab = "DS group at pretest", main = "")
+hist(subset(post, pre[, 2]=="DS")[, 4], xlab = "DS group at posttest", main = "")
