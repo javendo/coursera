@@ -1,9 +1,0 @@
-module Main where
-
-import Data.Char
-
-toDigits :: Int -> [Int]
-toDigits n = [digitToInt x | x <- show n]
-
-isValid :: Int -> Bool
-isValid n = 

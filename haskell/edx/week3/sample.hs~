@@ -1,2 +1,0 @@
-halve xs = (take n xs, drop n xs)
-           where n = lenght xs / 2
